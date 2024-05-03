@@ -369,6 +369,8 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/ClearCounter.cs"
 "Assets/Scripts/GameInput.cs"
+"Assets/Scripts/KitchenObject.cs"
+"Assets/Scripts/KitchenObjectsSO.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/PlayerAnimator.cs"
 "Assets/Scripts/SelectedCounterVisual.cs"
