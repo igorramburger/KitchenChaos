@@ -37,5 +37,21 @@ public class KitchenObject : MonoBehaviour
         return kitchenObjectParent; 
     }
 
+    public void DestroySelf()
+    {
+        kitchenObjectParent.ClearKitchenObject();
 
+        Destroy(gameObject);
+    }
+
+    public static KitchenObject SpawnKitchenObject(KitchenObjectsSO kitchenObjectSO, IKitchenObjectParent kitchenObjectParent)
+    {
+        Transform kitchenObjectTransform = Instantiate(kitchenObjectSO.prefab);
+
+        KitchenObject kitchenobject = kitchenObjectTransform.GetComponent<KitchenObject>();
+
+        kitchenobject.SetKitchenObjectParent(kitchenObjectParent);
+
+        return kitchenobject;
+    }
 }
